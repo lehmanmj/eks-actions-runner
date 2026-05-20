@@ -13,7 +13,14 @@ jobs:
             runner: [eks-small-apg, eks-medium-apg, eks-large-apg]
     runs-on: ${{ matrix.runner }}
     steps:
-        - name: take a nap
-          run: sleep 5
+        - uses: actions/setup-python@v5
+          with:
+            python-version: '3.12'
+
+        - name: Install dependencies
+          run: |
+            python -m pip install --upgrade pip
+            pip install awscli
+
         - name: check creds
           run: aws sts get-caller-identity
