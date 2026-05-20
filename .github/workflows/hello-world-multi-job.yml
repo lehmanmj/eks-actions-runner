@@ -1,4 +1,4 @@
-name: test gha runner
+name: test gha runner multiple jobs
 on:
   workflow_dispatch:
 

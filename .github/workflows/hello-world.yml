@@ -1,4 +1,4 @@
-name: test gha runner
+name: test gha runner (1 file)
 on:
   workflow_dispatch:
 
