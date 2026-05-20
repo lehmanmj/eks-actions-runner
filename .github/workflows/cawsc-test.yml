@@ -1,0 +1,19 @@
+name: cawsc test (w eks matrix)
+on:
+  workflow_dispatch:
+
+permissions:
+  id-token: write   
+  contents: read  
+
+jobs:
+  matrix_hello_world:
+    strategy:
+        matrix:
+            runner: [eks-small-apg, eks-medium-apg, eks-large-apg]
+    runs-on: ${{ matrix.runner }}
+    steps:
+        - name: take a nap
+          run: sleep 5
+        - name: check creds
+          run: aws sts get-caller-identity
