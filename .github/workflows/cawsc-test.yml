@@ -26,7 +26,7 @@ jobs:
           run: aws sts get-caller-identity
 
         - name: role chain
-          uses: aws-actions/configure-aws-credentials/@c0e2737f14c4eb148ab17eb7c172361aab9ee0ac
+          uses: aws-actions/configure-aws-credentials/@6795889618d79d99229f756707265940b9c929a0
           with:
             aws-region: us-east-2
             role-to-assume: arn:aws:iam::884348119369:role/role-for-eks-to-chain-into
