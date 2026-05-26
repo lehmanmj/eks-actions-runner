@@ -31,6 +31,7 @@ jobs:
             aws-region: us-east-2
             role-to-assume: arn:aws:iam::884348119369:role/role-for-eks-to-chain-into
             role-skip-session-tagging: true
-            
+            role-chaining: true
+
         - name: check creds again
           run: aws sts get-caller-identity
