@@ -26,6 +26,7 @@ jobs:
           run: aws sts get-caller-identity
 
         - name: role chain
+          id: my-super-cool-id-step-yeah1337            
           uses: aws-actions/configure-aws-credentials@main
           with:
             aws-region: us-east-2
