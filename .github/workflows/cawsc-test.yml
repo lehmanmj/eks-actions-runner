@@ -25,8 +25,7 @@ jobs:
         - name: check creds
           run: aws sts get-caller-identity
 
-        - name: role chain
-          id: my-super-cool-id-step-yeah1337            
+        - name: role chain  
           uses: lehmanmj/configure-aws-credentials@eks-tag-size-testing
           with:
             aws-region: us-east-2
