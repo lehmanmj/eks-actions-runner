@@ -1,6 +1,7 @@
 name: cawsc test (w eks matrix)
 on:
   workflow_dispatch:
+  pull_request:
 
 permissions:
   id-token: write   
