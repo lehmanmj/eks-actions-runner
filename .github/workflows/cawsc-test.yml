@@ -33,8 +33,19 @@ jobs:
             role-skip-session-tagging: false
             role-chaining: true
             transitive-tag-keys: |
+              GitHub
+              Repository
+              Workflow
+              Action
+              Actor
               Commit
+              Branch
+              EventName
+              RefName
               RunId
+              RefType
+              Job
+              TriggeringActor
 
         - name: check creds again
           run: aws sts get-caller-identity
