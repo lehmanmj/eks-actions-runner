@@ -27,7 +27,7 @@ jobs:
 
         - name: role chain
           id: my-super-cool-id-step-yeah1337            
-          uses: aws-actions/configure-aws-credentials@main
+          uses: lehmanmj/configure-aws-credentials@eks-tag-size-testing
           with:
             aws-region: us-east-2
             role-to-assume: arn:aws:iam::884348119369:role/role-for-eks-to-chain-into
