@@ -227,3 +227,6 @@ From the Actions page of your GitHub repository you can validate the status of G
 - Run `terraform destroy`
 
 - [Delete](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html) CloudFormation stack
+
+
+try again to see if pr triggering workflow will always use version of wf that's current to when pr was opened??
