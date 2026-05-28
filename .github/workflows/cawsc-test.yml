@@ -53,7 +53,7 @@ jobs:
           with:
             aws-region: us-east-2
             role-to-assume: arn:aws:iam::884348119369:role/role-for-eks-to-chain-into
-            role-skip-session-tagging: true
+            role-skip-session-tagging: false
             role-chaining: true
 
         - name: check creds again
